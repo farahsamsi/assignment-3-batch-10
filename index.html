@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Tailwind CSS and DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -23,7 +26,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#ABEF5F', 
+                        primary: '#ABEF5F',
                         body: '#F4F4F4',
                         light: '#737373',
                         dark: '#494949',
@@ -32,21 +35,83 @@
                         Manrope: 'Manrope',
                     },
                     backgroundImage: {
-                        leaf1: "url(./assets/bg.jpg)",
+                        paper: "url(./assets/bg.jpg)",
                     },
                 },
             },
         }
- </script>
+    </script>
 </head>
 
 <body class="font-Manrope">
-    <h1 class="bg-primary">testing</h1>
-    <h1 class="bg-primary bg-opacity-50">testing</h1>
-    <h1 class="bg-dark">testing</h1>
-    <h1 class="bg-light">testing</h1>
-    <h1 class="bg-body">testing <i class="fa-solid fa-magnifying-glass"></i></h1>
-    <h1 class="bg-leaf1 h-[85vh]">background <i class="fa-solid fa-magnifying-glass"></i></h1>
-    <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <!-- head starts -->
+    <header class="">
+        <!-- navbar starts -->
+        <nav class="container mx-auto pt-8">
+            <div class="navbar justify-between">
+                <div class="">
+                    <a href="#" class="text-xl flex items-center">
+                        <i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full size-8 flex justify-center items-center"></i>
+                        <h1 class="font-extrabold text-3xl ml-2">Rinterio</h1>
+                    </a>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-light hover:text-dark hover:font-extrabold transition duration-300">Home</a>
+                        </li>
+                        <li><a
+                                class="text-light hover:text-dark hover:font-extrabold transition duration-300">Services</a>
+                        </li>
+                        <li><a
+                                class="text-light hover:text-dark hover:font-extrabold transition duration-300">Portfolio</a>
+                        </li>
+                        <li><a class="text-light hover:text-dark hover:font-extrabold transition duration-300">Blogs</a>
+                        </li>
+                        <li><a class="text-light hover:text-dark hover:font-extrabold transition duration-300">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <div class="space-x-4">
+                    <i
+                        class="fa-solid fa-magnifying-glass p-5 text-xl text-light border-2 border-[#E9E9E9] bg-white rounded-full size-8 flex justify-center items-center hidden md:flex"></i>
+                    <i
+                        class="fa-solid fa-cart-shopping p-5 text-xl text-light border-2 border-[#E9E9E9] bg-white rounded-full size-8 flex justify-center items-center hidden md:flex"></i>
+                    <a class="btn bg-primary rounded-[2rem] text-xl hidden md:flex">
+                        <h1 class="text-[#1C1C1C] font-extrabold">Book Consult</h1>
+                        <i
+                            class="fa-solid fa-arrow-right -rotate-45  bg-[#1C1C1C] text-white rounded-full size-8 flex justify-center items-center"></i>
+                    </a>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i
+                                class="fa-solid fa-bars p-5 text-xl text-light border-2 border-[#E9E9E9] bg-white rounded-full size-8 flex justify-center items-center"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li><a
+                                    class="text-light hover:text-dark hover:font-extrabold transition duration-300">Home</a>
+                            </li>
+                            <li><a
+                                    class="text-light hover:text-dark hover:font-extrabold transition duration-300">Services</a>
+                            </li>
+                            <li><a
+                                    class="text-light hover:text-dark hover:font-extrabold transition duration-300">Portfolio</a>
+                            </li>
+                            <li><a
+                                    class="text-light hover:text-dark hover:font-extrabold transition duration-300">Blogs</a>
+                            </li>
+                            <li><a class="text-light hover:text-dark hover:font-extrabold transition duration-300">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends -->
+    </header>
+    <!-- head ends -->
 </body>
+
 </html>
