@@ -301,13 +301,13 @@
                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
                 <!-- grid layout -->
-                <div class="grid grid-cols-1 gap-4">
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-12">
                     <!-- card 1 -->
-                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col">
-                        <div>
-                            <img class="w-full mb-6" src="assets/img1.png" alt="house">
+                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex gap-6 flex-col md:flex-row md:col-span-2 lg:col-span-8">
+                        <div class="md:w-2/5">
+                            <img class="w-full" src="assets/img1.png" alt="house">
                         </div>
-                        <div>
+                        <div class="md:flex-1">
                             <h1 class="text-dark text-xl font-extrabold">Commercial</h1>
                             <p class="font-medium text-light mt-4 mb-[22px]">The barn house captivates with its blend of
                                 rustic charm and modern. The barn house
@@ -320,23 +320,29 @@
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col">
+                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col lg:col-span-4">
+                        <div class="md:h-full">
+                            <img class="w-full md:h-full" src="assets/img2.png" alt="house">
+                        </div>
+                    </div>
+                    <!-- card 5 only for pc -->
+                    <div class="hidden lg:block p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col lg:col-span-3">
                         <div>
-                            <img class="w-full" src="assets/img2.png" alt="house">
+                            <img class="w-full" src="assets/img3.png" alt="house">
                         </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col">
+                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col lg:hidden">
                         <div>
                             <img class="w-full" src="assets/img5.png" alt="house">
                         </div>
                     </div>
                     <!-- card 4 -->
-                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col">
-                        <div>
-                            <img class="w-full mb-6" src="assets/img4.png" alt="house">
+                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex gap-6 flex-col md:flex-row md:col-span-2 lg:col-span-6">
+                        <div class="md:w-2/5 lg:h-full">
+                            <img class="w-full lg:h-full" src="assets/img4.png" alt="house">
                         </div>
-                        <div>
+                        <div class="md:flex-1">
                             <h1 class="text-dark text-xl font-extrabold">Commercial</h1>
                             <p class="font-medium text-light mt-4 mb-[22px]">The barn house captivates with its blend of
                                 rustic charm and modern. The barn house
@@ -349,13 +355,13 @@
                         </div>
                     </div>
                     <!-- card 5 -->
-                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col">
+                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col lg:hidden">
                         <div>
                             <img class="w-full" src="assets/img3.png" alt="house">
                         </div>
                     </div>
                     <!-- card 6 -->
-                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col">
+                    <div class="p-6 rounded-2xl border border-[#E9E9E9] bg-white flex flex-col lg:col-span-3">
                         <div>
                             <img class="w-full" src="assets/img5.png" alt="house">
                         </div>
