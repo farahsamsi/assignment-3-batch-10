@@ -44,10 +44,6 @@
 
     <!-- raw CSS style -->
     <style>
-        .linear-bg {
-            background-image: linear-gradient(to bottom, #F4F4F4, #FDFDFD);
-        }
-
         .stroke {
             -webkit-text-stroke: 1px;
         }
@@ -56,7 +52,7 @@
 
 <body class="font-Manrope">
     <!-- head starts -->
-    <header class="linear-bg">
+    <header class="bg-gradient-to-b from-body to-white">
         <!-- navbar starts -->
         <nav class="container mx-auto pt-8">
             <div class="navbar justify-between">
@@ -574,7 +570,7 @@
                 </div>
 
                 <!-- right side -->
-                <div class="space-y-4">
+                <div class="flex flex-col lg:justify-between gap-4">
                     <!-- accordion from DaisyUI -->
                     <div class="collapse collapse-plus border border-light">
                         <input type="radio" name="my-accordion-3" checked="checked" />
@@ -656,7 +652,6 @@
 
 
                 </div>
-
             </div>
         </section>
         <!-- unique section (FAQ) ends -->
